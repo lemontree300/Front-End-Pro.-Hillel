@@ -1,0 +1,17 @@
+h1 {
+    font: 900 30px sans-serif;
+    color: red;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    right: 30%;
+    z-index: 9;
+}
+
+div {
+    background: url(image.png) 0 0/auto 100% no-repeat;
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0 20% 0 20%;
+}
