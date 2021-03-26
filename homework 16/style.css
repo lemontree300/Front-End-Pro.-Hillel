@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    margin: 20px;
+    font: 900 30px sans-serif;
+    color: red;
+}
+
+#blueRect {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
