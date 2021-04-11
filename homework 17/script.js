@@ -262,7 +262,7 @@ for (var key in listArray) {
     delete listArray[key].website;
     delete listArray[key].address.geo;
 }
-console.log(listArray);//запрещаю редактировать, и удаляю ненужные элементы. Вижу результат в console.log
+console.log(listArray);//запрещаю редактировать, и удаляю ненужные элементы. Вижу результат в console.log . Когда тестировал с помощью enumerable, в консоль все равно выводились website и company
 
 document.write(JSON.stringify(listArray, null, 9));//вывожу результат на экран, но уродливо
 
@@ -279,8 +279,9 @@ function createPost(post, importTo) {
         '<address>' + 'email: ' + '<a href="mailto:' + post.email + '">' + post.email + '</a></address>' +
         '<p>' + 'address: ' + post.address.street + ', ' + post.address.suite + ', ' + post.address.city + ', ' + post.address.zipcode + '</p>' +
         '<p>' + 'phone: ' + post.phone + '</p>' +
+        //'<p>' + post.company + ', ' + post.website + ', ' + post.address.geo + '</p>' +//проверка на удалилились, или нет
         '<br>'
     '</div>';
     customDiv.innerHTML = newPost;
     importTo.appendChild(customDiv);
-};//пока только так понял, как сделать проще?
+};//пока только так понял, как сделать вывод на экран проще?
