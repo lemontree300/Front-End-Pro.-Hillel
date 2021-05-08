@@ -8,7 +8,7 @@ var openNewWindow = window.open('cat.jpg', 'Frontend', 'width=500, height=500, d
 
 setTimeout(function () { openNewWindow.close(); }, 15000); // Окно закрывается через 15 секунд
 
-openNewWindow.moveTo(0, 0); // Я собирался двигать окно
+openNewWindow.moveTo(0, 0); // Я собирался двигать окно, но дальнейшие попытки не сработали
 
 /////////////////////////////////////////////////////////
 
